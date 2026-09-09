@@ -7,11 +7,17 @@ document.addEventListener('DOMContentLoaded', () => {
   const methodProgress = document.querySelector('.method-progress span');
   const methodSection = document.querySelector('.method');
   let lastScroll = 0;
+  let scrollTicking = false;
+
+  requestAnimationFrame(() => document.documentElement.classList.add('is-ready'));
 
   const updateScrollUi = () => {
     const y = window.scrollY;
     const scrollable = document.documentElement.scrollHeight - window.innerHeight;
     const pageProgress = scrollable > 0 ? Math.min(y / scrollable, 1) : 0;
+
+    document.documentElement.style.setProperty('--page-progress', pageProgress);
+    document.querySelector('.hero')?.style.setProperty('--hero-shift', `${Math.min(y * .11, 72)}px`);
 
     if (header) {
       header.classList.toggle('scrolled', y > 34);
@@ -56,6 +62,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  document.querySelectorAll('.recognition, .authority, .offer, .final').forEach((section) => {
+    section.addEventListener('pointermove', (event) => {
+      if (scrollTicking) return;
+      scrollTicking = true;
+      requestAnimationFrame(() => {
+        const rect = section.getBoundingClientRect();
+        section.style.setProperty('--mx', `${event.clientX - rect.left}px`);
+        section.style.setProperty('--my', `${event.clientY - rect.top}px`);
+        scrollTicking = false;
+      });
+    });
+  });
+
   if (!reduceMotion) {
     document.querySelectorAll('.magnetic').forEach((element) => {
       element.addEventListener('pointermove', (event) => {
@@ -91,6 +110,26 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }, { rootMargin: '-38% 0px -45% 0px', threshold: 0 });
     steps.forEach((step) => stepObserver.observe(step));
+  }
+
+  const counter = document.querySelector('[data-count]');
+  if (counter && 'IntersectionObserver' in window && !reduceMotion) {
+    const target = Number(counter.dataset.count || counter.textContent);
+    const counterObserver = new IntersectionObserver(([entry], observer) => {
+      if (!entry.isIntersecting) return;
+      const started = performance.now();
+      const duration = 1350;
+      const animateCount = (now) => {
+        const progress = Math.min((now - started) / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        counter.textContent = String(Math.round(target * eased));
+        if (progress < 1) requestAnimationFrame(animateCount);
+      };
+      counter.textContent = '0';
+      requestAnimationFrame(animateCount);
+      observer.disconnect();
+    }, { threshold: .5 });
+    counterObserver.observe(counter);
   }
 
   const year = document.querySelector('#year');
