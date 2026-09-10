@@ -132,6 +132,60 @@ document.addEventListener('DOMContentLoaded', () => {
     counterObserver.observe(counter);
   }
 
+  const testimonialTrack = document.querySelector('.testimonial-track');
+  const testimonialItems = Array.from(document.querySelectorAll('[data-testimonial]'));
+  const testimonialDots = document.querySelector('.testimonial-dots');
+  const testimonialCount = document.querySelector('.testimonial-count');
+  const testimonialPrev = document.querySelector('.testimonial-prev');
+  const testimonialNext = document.querySelector('.testimonial-next');
+
+  if (testimonialTrack && testimonialItems.length && testimonialDots) {
+    let testimonialIndex = 0;
+    let testimonialTicking = false;
+
+    const updateTestimonialUi = (index) => {
+      testimonialIndex = Math.max(0, Math.min(index, testimonialItems.length - 1));
+      testimonialCount.textContent = `${String(testimonialIndex + 1).padStart(2, '0')} / ${String(testimonialItems.length).padStart(2, '0')}`;
+      testimonialDots.querySelectorAll('button').forEach((dot, dotIndex) => {
+        dot.classList.toggle('is-active', dotIndex === testimonialIndex);
+        dot.setAttribute('aria-current', dotIndex === testimonialIndex ? 'true' : 'false');
+      });
+    };
+
+    const goToTestimonial = (index) => {
+      const targetIndex = (index + testimonialItems.length) % testimonialItems.length;
+      testimonialTrack.scrollTo({ left: testimonialItems[targetIndex].offsetLeft - testimonialTrack.offsetLeft, behavior: reduceMotion ? 'auto' : 'smooth' });
+      updateTestimonialUi(targetIndex);
+    };
+
+    testimonialItems.forEach((_, index) => {
+      const dot = document.createElement('button');
+      dot.className = 'testimonial-dot';
+      dot.type = 'button';
+      dot.setAttribute('aria-label', `Ir para o placeholder ${index + 1}`);
+      dot.addEventListener('click', () => goToTestimonial(index));
+      testimonialDots.appendChild(dot);
+    });
+
+    testimonialPrev?.addEventListener('click', () => goToTestimonial(testimonialIndex - 1));
+    testimonialNext?.addEventListener('click', () => goToTestimonial(testimonialIndex + 1));
+    testimonialTrack.addEventListener('scroll', () => {
+      if (testimonialTicking) return;
+      testimonialTicking = true;
+      requestAnimationFrame(() => {
+        const trackLeft = testimonialTrack.getBoundingClientRect().left;
+        const closestIndex = testimonialItems.reduce((closest, item, index) => {
+          const distance = Math.abs(item.getBoundingClientRect().left - trackLeft);
+          return distance < closest.distance ? { index, distance } : closest;
+        }, { index: 0, distance: Infinity }).index;
+        updateTestimonialUi(closestIndex);
+        testimonialTicking = false;
+      });
+    }, { passive: true });
+
+    updateTestimonialUi(0);
+  }
+
   const year = document.querySelector('#year');
   if (year) year.textContent = new Date().getFullYear();
 });
