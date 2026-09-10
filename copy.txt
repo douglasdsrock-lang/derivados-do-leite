@@ -1,0 +1,262 @@
+COPY DA PÁGINA DE VENDAS
+UNIVERSO DOS DERIVADOS DO LEITE
+Conceito central: DO LEITE AO LUCRO
+Documento organizado por dobras para Web Design
+
+=====================================================
+DOBRA 01 — HERO
+[section: hero]
+Objetivo: comunicar produto, transformação, amplitude do método e autoridade imediatamente.
+=====================================================
+
+[headline] UNIVERSO DOS DERIVADOS DO LEITE
+
+[headline] DO LEITE AO LUCRO
+
+[description] Aprenda a transformar leite em queijos e derivados de alto valor agregado,
+com técnica, qualidade e segurança — mesmo que você esteja começando
+do zero.
+
+[subheadline] DO BÁSICO À COMERCIALIZAÇÃO
+
+[description] Um método completo, construído sobre mais de 20 anos de experiência, para você aprender a produzir,
+diversificar e agregar valor ao leite — seja para consumo próprio ou para transformar essa habilidade em
+uma nova fonte de renda.
+
+[cta] QUERO COMEÇAR MINHA JORNADA
+
+[trust_bar] +20 anos de experiência • Aulas online • Suporte • Certificado
+
+=====================================================
+DOBRA 02 — PROBLEMA + OPORTUNIDADE
+[section: problema/oportunidade]
+Objetivo: gerar identificação e ampliar a percepção de valor da matéria-prima.
+=====================================================
+
+[headline] UM UNIVERSO DENTRO DA MESMA MATÉRIA-PRIMA
+
+[subheadline] Você já percebeu quantas possibilidades podem existir dentro
+de alguns litros de leite?
+
+[description] Queijos, manteiga, ricota, requeijão, iogurte, doce de leite e muitos outros derivados podem nascer da
+mesma matéria-prima. Mas, sem o conhecimento certo, todo esse potencial acaba limitado.
+
+[description] E tentar descobrir tudo sozinho pode custar caro: receitas que dão errado, leite desperdiçado, baixo
+rendimento, produtos sem padronização, dúvidas sobre higiene e conservação e insegurança na hora de
+vender.
+
+[description] Para quem deseja comercializar, surge ainda outra pergunta: como transformar uma boa produção
+em um produto com valor para o cliente e retorno para quem produz?
+
+[destaque] O valor não está apenas no leite.
+Está no que você sabe fazer com ele.
+
+=====================================================
+DOBRA 03 — O MÉTODO — DO LEITE AO LUCRO
+[section: método]
+Objetivo: apresentar o Universo dos Derivados do Leite como uma jornada, não como uma coleção de receitas.
+=====================================================
+
+[badge] CONHEÇA O MÉTODO
+
+[headline] Universo dos Derivados do Leite
+
+[description] Um método que reúne mais de 20 anos de experiência no ensino da fabricação de queijos e derivados
+em uma jornada prática, estruturada e fácil de acompanhar.
+
+[description] Aqui, você não aprende apenas a repetir receitas. Você entende os processos para produzir com mais
+técnica, qualidade, segurança e padronização — e avança para conhecimentos que ajudam a aproveitar
+melhor a matéria-prima e agregar valor ao que produz.
+
+[lista: etapas do método]
+01. APRENDER — Entenda os fundamentos e as técnicas por trás da produção.
+02. PRODUZIR — Transforme conhecimento em queijos e diferentes derivados.
+03. PADRONIZAR — Busque consistência em qualidade, sabor, textura e rendimento.
+04. DIVERSIFICAR — Amplie seu repertório e as possibilidades da mesma matéria-prima.
+05. AGREGAR VALOR — Avance em aproveitamento, custos, conservação, embalagem e precificação.
+06. COMERCIALIZAR — Desenvolva conhecimentos para transformar a produção em uma possibilidade
+de negócio.
+
+[destaque] Não é apenas sobre aprender a fazer queijo.
+É sobre aprender a enxergar todo o potencial que existe no leite.
+
+[cta] QUERO CONHECER O UNIVERSO DOS DERIVADOS
+
+=====================================================
+DOBRA 04 — O QUE VOCÊ VAI DOMINAR
+[section: benefícios/conteúdo]
+Objetivo: unir conteúdo, benefícios e transformação sem alongar a página.
+=====================================================
+
+[headline] DO BÁSICO À PRÁTICA E À COMERCIALIZAÇÃO
+
+[subheadline] Desenvolva uma produção com mais técnica, qualidade e
+possibilidades.
+
+[card] PRODUÇÃO
+Aprenda os fundamentos e processos para produzir queijos, manteiga, ricota, requeijão, iogurte, doce de
+leite e outros derivados contemplados no treinamento.
+
+[card] QUALIDADE E SEGURANÇA
+Aprofunde conhecimentos sobre rendimento, textura, sabor, padronização, higiene, segurança e boas
+práticas.
+
+[card] APROVEITAMENTO E DIVERSIFICAÇÃO
+Aprenda a utilizar melhor a matéria-prima, reduzir perdas e ampliar as possibilidades da produção.
+
+[card] NEGÓCIO
+Para quem deseja vender: custos, precificação, conservação, embalagem e estratégias de
+comercialização.
+
+[destaque] De "Será que vai dar certo?"
+para "Agora eu entendo o processo e sei o que estou fazendo."
+
+[nota para o designer] ÁREA PARA O DESIGNER: inserir a grade detalhada dos módulos em accordion ou botão "Ver conteúdo completo", quando o
+conteúdo programático definitivo for entregue.
+
+=====================================================
+DOBRA 05 — AUTORIDADE + PROVA SOCIAL
+[section: autoridade/prova social]
+Objetivo: responder "por que aprender com ela?" e provar que a experiência é real.
+=====================================================
+
+[headline] CONHECIMENTO QUE NÃO COMEÇOU ONTEM
+
+[subheadline] Mais de 20 anos ensinando pessoas a transformar leite em
+queijos e derivados.
+
+[description] Durante mais de duas décadas, [NOME DA EXPERT] vem dedicando sua trajetória ao ensino da
+fabricação de queijos e derivados do leite, capacitando produtores rurais, empreendedores e
+apaixonados pela queijaria em diferentes cidades de Goiás.
+
+[description] Agora, essa experiência é organizada em um método online para que mais pessoas possam aprender de
+onde estiverem, no próprio ritmo, com uma jornada clara do básico à comercialização.
+
+[stat] +20 ANOS
+dedicados ao ensino da fabricação de queijos e derivados.
+
+[placeholder] [INSERIR FORMAÇÃO / CREDENCIAIS REAIS DA EXPERT]
+
+[headline] QUEM JÁ APRENDEU COM ELA
+
+[placeholder] [Inserir depoimentos reais em vídeo, prints, fotos de produções e relatos de ex-alunos. Priorizar provas sobre didática, evolução
+técnica, qualidade da produção e resultados reais. Não usar depoimentos fictícios.]
+
+=====================================================
+DOBRA 06 — A OFERTA
+[section: oferta]
+Objetivo: tangibilizar tudo o que o aluno recebe e conduzir à compra.
+=====================================================
+
+[badge] AGORA É A SUA VEZ
+
+[headline] Entre para o Universo dos Derivados do Leite
+
+[description] Tenha acesso a uma jornada criada para desenvolver seus conhecimentos e ajudar você a colocar o
+aprendizado em prática com mais técnica, segurança e clareza.
+
+[card] CURSO COMPLETO — UNIVERSO DOS DERIVADOS DO LEITE
+Aulas online organizadas para conduzir o aluno dos fundamentos aos conhecimentos relacionados à
+comercialização.
+
+[card] MATERIAIS COMPLEMENTARES EM PDF
+Materiais de apoio para complementar o aprendizado e facilitar a aplicação.
+
+[card] SUPORTE AO ALUNO
+Acompanhamento durante a jornada de aprendizado, conforme o formato definitivo de suporte.
+
+[card] CERTIFICADO DE CONCLUSÃO
+Certificado disponibilizado ao concluir o treinamento.
+
+[card: bônus] BÔNUS — APROVEITAMENTO DO SORO
+Receitas de sobremesas e bebidas lácteas utilizando o soro proveniente da fabricação dos queijos.
+
+[description] O que muitos enxergam como sobra também pode ganhar uma nova utilidade. Aproveitar melhor a
+matéria-prima também faz parte da jornada Do Leite ao Lucro.
+
+[preço] INVESTIMENTO
+[VALOR DEFINITIVO]
+ou [PARCELAMENTO]
+
+[cta] QUERO ENTRAR PARA O UNIVERSO DOS DERIVADOS DO LEITE
+
+[placeholder] [Inserir pagamento seguro, tempo de acesso e garantia somente após confirmação.]
+
+=====================================================
+DOBRA 07 — QUEBRA DE OBJEÇÕES / FAQ
+[section: faq]
+Objetivo: eliminar os últimos bloqueios antes da decisão.
+=====================================================
+
+[faq: pergunta] Nunca fiz queijo. Vou conseguir acompanhar?
+[faq: resposta] Sim. O curso foi pensado também para iniciantes e organiza o aprendizado de maneira progressiva,
+começando pelos fundamentos.
+
+[faq: pergunta] Não tenho equipamentos profissionais. Posso começar?
+[faq: resposta] O método trabalha com técnicas reproduzíveis e equipamentos acessíveis, sem exigir que o aluno
+comece com uma grande estrutura profissional.
+
+[faq: pergunta] Já produzo queijos. Ainda vale a pena?
+[faq: resposta] Sim. O treinamento também atende quem já possui alguma experiência e deseja aperfeiçoar técnicas,
+qualidade, rendimento, padronização e diversificação.
+
+[faq: pergunta] Quero produzir para vender. O curso me ajuda?
+[faq: resposta] Sim. Além da fabricação, o conteúdo aborda custos, precificação, conservação, embalagem e estratégias
+de venda.
+
+[faq: pergunta] Vou aprender somente sobre queijos?
+[faq: resposta] Não. O Universo dos Derivados do Leite contempla também outros derivados, como manteiga, ricota,
+requeijão, iogurte e doce de leite.
+
+[faq: pergunta] Tem suporte e certificado?
+[faq: resposta] Sim. O curso contará com suporte e certificado de conclusão.
+
+[nota para o designer] Adicionar após confirmação: preciso produzir meu próprio leite? • como funciona o suporte? • por quanto tempo terei acesso?
+• qual é a garantia?
+
+=====================================================
+DOBRA 08 — FECHAMENTO / CTA FINAL
+[section: fechamento]
+Objetivo: retomar a Big Idea, a autoridade e conduzir à ação.
+=====================================================
+
+[headline] UNIVERSO DOS DERIVADOS DO LEITE
+
+[headline] Quantas possibilidades podem existir dentro de um litro de
+leite?
+
+[description] A resposta depende do conhecimento de quem está com ele nas mãos.
+
+[description] Você pode continuar reunindo receitas, técnicas e informações espalhadas em diferentes lugares — ou
+seguir uma jornada estruturada por quem dedica mais de 20 anos ao ensino da fabricação de queijos e
+derivados.
+
+[description] Seja para produzir para sua família, aperfeiçoar o que já faz ou desenvolver uma habilidade que pode
+abrir novas possibilidades de renda, o seu próximo passo pode começar aqui.
+
+[destaque] O leite é o ponto de partida.
+O que você fará com ele pode ser só o começo.
+
+[headline] UNIVERSO DOS DERIVADOS DO LEITE
+
+[headline] DO LEITE AO LUCRO
+
+[cta] QUERO COMEÇAR MINHA JORNADA
+
+=====================================================
+NOTAS FINAIS PARA O WEB DESIGNER
+=====================================================
+
+• Manter a página enxuta: 8 dobras principais.
+• O nome do produto é Universo dos Derivados do Leite. Do Leite ao Lucro é o conceito/mecanismo
+de transformação.
+• No HERO, usar a foto real da profissional integrada à composição, preservando o rosto e aplicando
+sombra/contraste apenas onde necessário para leitura.
+• Evitar aparência de template de IA: excesso de cards, gradientes, ícones genéricos, bordas
+arredondadas e repetições.
+• Priorizar fotos reais da expert, produção, queijos e derivados.
+• Tipografia mais quadrada/estruturada, porém delicada e elegante.
+• Dobras com transições suaves, boa área de respiro e cores da identidade visual fornecida.
+• A copy evita promessas de faturamento garantido. O foco é técnica, valor agregado, comercialização e
+possibilidade de geração de renda.
+• Campos entre [colchetes] precisam ser confirmados antes da publicação.
