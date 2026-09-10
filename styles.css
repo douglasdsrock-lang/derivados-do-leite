@@ -223,7 +223,7 @@ footer{background:var(--grafite-leite)}
 @media(min-width:941px){.final h2{font-size:clamp(3.7rem,5.4vw,5.9rem);line-height:.94}}
 
 /* Hero mobile dedicada */
-@media(max-width:620px){.hero,.hero:is(:hover,:focus-within){min-height:1120px;background-color:var(--nata);background-image:url('assets/background-mobile.webp');background-position:center top;background-size:100% auto;background-repeat:no-repeat}.hero-layout{min-height:1120px;align-items:flex-end;padding:535px 0 48px}.hero-copy{max-width:none;padding-left:0}.hero h1{font-size:3.25rem}.hero-description{max-width:440px}.hero-method{display:block;overflow:visible;-webkit-line-clamp:unset}.hero-trustline{max-width:100%}}
+@media(max-width:620px){.hero,.hero:is(:hover,:focus-within){min-height:1120px;background-color:var(--nata);background-image:url('assets/background-mobile.webp');background-position:center top;background-size:100% auto;background-repeat:no-repeat}.hero-layout{min-height:1120px;align-items:flex-start;padding:490px 0 48px}.hero-copy{max-width:none;padding-left:0}.hero h1{font-size:3.25rem}.hero-description{max-width:440px}.hero-method{display:block;overflow:visible;-webkit-line-clamp:unset}.hero-trustline{max-width:100%}}
 
 /* Sistema de movimento editorial */
 [data-reveal]{--reveal-x:0px;--reveal-y:54px;--reveal-scale:.985;opacity:0;filter:blur(5px);transform:translate3d(var(--reveal-x),var(--reveal-y),0) scale(var(--reveal-scale));transition-property:opacity,filter,transform;transition-duration:1.05s;transition-delay:var(--reveal-delay,0ms);transition-timing-function:cubic-bezier(.16,1,.3,1);will-change:opacity,filter,transform}
