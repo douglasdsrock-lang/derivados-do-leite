@@ -132,3 +132,8 @@ footer{background:var(--grafite-leite)}
 /* Hero sem corte e sem ampliar o arquivo original */
 .hero,.hero:is(:hover,:focus-within){background-color:var(--nata);background-image:url('assets/background-desktop-2.webp');background-position:center top;background-size:min(100%,1672px) auto;background-repeat:no-repeat}
 @media(max-width:620px){.hero{background-image:linear-gradient(180deg,rgba(250,231,218,.9) 0%,rgba(250,231,218,.76) 48%,var(--nata) 76%),url('assets/background-desktop-2.webp');background-position:center,center top;background-size:100% 100%,min(100%,1672px) auto}}
+
+/* Hero full-bleed e marquee contínuo */
+.hero,.hero:is(:hover,:focus-within){background-image:url('assets/background-desktop-2.webp');background-position:center top;background-size:cover}.hero:before{display:none!important}
+.marquee{z-index:5;width:100%;margin:0;padding:11px 0;border-width:1px 0;border-radius:0;background:rgba(250,231,218,.64);box-shadow:0 10px 32px rgba(140,74,56,.07),inset 0 1px rgba(255,255,255,.6);backdrop-filter:blur(20px) saturate(140%);-webkit-backdrop-filter:blur(20px) saturate(140%)}.marquee:after{display:none}.marquee-track{animation-duration:24s;will-change:transform}.marquee-group{min-width:max(100vw,960px);justify-content:space-around;gap:28px;padding:0 34px}.marquee-group span{white-space:nowrap;color:var(--terracota);font-size:.7rem;font-weight:600;letter-spacing:.18em}.marquee-group i{width:4px;height:4px;border-radius:50%;background:var(--rosa-coalhada)}
+@media(max-width:620px){.hero{background-image:url('assets/background-desktop-2.webp');background-position:58% top;background-size:cover}.marquee{width:100%;margin:0;border-radius:0}.marquee-group{min-width:1040px}}
