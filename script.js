@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const progressBar = document.querySelector('.scroll-progress span');
   const methodProgress = document.querySelector('.method-progress span');
   const methodSection = document.querySelector('.method');
+  const motionSections = Array.from(document.querySelectorAll('.section'));
   let lastScroll = 0;
   let scrollTicking = false;
 
@@ -31,6 +32,17 @@ document.addEventListener('DOMContentLoaded', () => {
       const methodScrollable = methodSection.offsetHeight - window.innerHeight;
       const localProgress = methodScrollable > 0 ? Math.min(Math.max(-rect.top / methodScrollable, 0), 1) : 0;
       methodProgress.style.transform = `scaleX(${localProgress})`;
+    }
+
+    if (!reduceMotion) {
+      motionSections.forEach((section) => {
+        const rect = section.getBoundingClientRect();
+        if (rect.bottom < 0 || rect.top > window.innerHeight) return;
+        const progress = Math.min(Math.max((window.innerHeight - rect.top) / (window.innerHeight + rect.height), 0), 1);
+        section.style.setProperty('--section-progress', progress.toFixed(3));
+        section.style.setProperty('--parallax-y', `${((.5 - progress) * 24).toFixed(1)}px`);
+        section.style.setProperty('--parallax-x', `${(progress * 28).toFixed(1)}px`);
+      });
     }
 
     lastScroll = Math.max(0, y);
@@ -87,15 +99,23 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  document.querySelectorAll('.method-steps, .pillar-grid, .faq-list, .testimonial-track').forEach((group) => {
+    Array.from(group.children).forEach((item, index) => {
+      if (!item.hasAttribute('data-reveal')) item.setAttribute('data-reveal', 'up');
+      item.style.setProperty('--reveal-delay', `${Math.min(index * 85, 340)}ms`);
+    });
+  });
+
   const revealItems = document.querySelectorAll('[data-reveal]');
   if (!reduceMotion && 'IntersectionObserver' in window) {
     const revealObserver = new IntersectionObserver((entries, observer) => {
       entries.forEach((entry) => {
         if (!entry.isIntersecting) return;
         entry.target.classList.add('visible');
+        window.setTimeout(() => entry.target.style.setProperty('--reveal-delay', '0ms'), 1400);
         observer.unobserve(entry.target);
       });
-    }, { threshold: .12 });
+    }, { rootMargin: '0px 0px -10% 0px', threshold: .08 });
     revealItems.forEach((item) => revealObserver.observe(item));
   } else {
     revealItems.forEach((item) => item.classList.add('visible'));
