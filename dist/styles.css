@@ -235,3 +235,7 @@ footer{background:var(--grafite-leite)}
 .section{--parallax-x:0px;--parallax-y:0px}.method-watermark{transform:translate3d(var(--parallax-x),0,0)}.authority-photo{transform:translate3d(0,var(--parallax-y),0)}.offer-texture{transform:translate3d(0,var(--parallax-y),0);inset:-24px 0}.final-rings{margin-top:var(--parallax-y)}
 @media(max-width:620px){[data-reveal]{--reveal-y:38px;--reveal-scale:.99;transition-duration:.85s}[data-reveal="left"],[data-reveal="right"]{--reveal-x:0px;--reveal-y:38px}.authority-photo{transform:none}.method-watermark,.offer-texture,.final-rings{margin-top:0;transform:none}}
 @media(prefers-reduced-motion:reduce){[data-reveal],[data-reveal]>*{opacity:1!important;filter:none!important;transform:none!important;transition:none!important}.method-watermark,.authority-photo,.offer-texture,.final-rings{margin-top:0!important;transform:none!important}}
+
+/* Ajustes de contraste e proporção para telas móveis estreitas */
+.method-highlight{border-color:rgba(140,74,56,.3);color:#76594f}.method-highlight strong{color:var(--terracota);font-weight:600}
+@media(max-width:620px){.hero-layout{padding-top:clamp(420px,118vw,490px)}}
