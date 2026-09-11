@@ -174,7 +174,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const goToTestimonial = (index) => {
       const targetIndex = (index + testimonialItems.length) % testimonialItems.length;
-      testimonialTrack.scrollTo({ left: testimonialItems[targetIndex].offsetLeft - testimonialTrack.offsetLeft, behavior: reduceMotion ? 'auto' : 'smooth' });
+      const trackRect = testimonialTrack.getBoundingClientRect();
+      const itemRect = testimonialItems[targetIndex].getBoundingClientRect();
+      const targetLeft = testimonialTrack.scrollLeft + itemRect.left - trackRect.left;
+      testimonialTrack.scrollTo({ left: targetLeft, behavior: reduceMotion ? 'auto' : 'smooth' });
       updateTestimonialUi(targetIndex);
     };
 

@@ -239,3 +239,8 @@ footer{background:var(--grafite-leite)}
 /* Ajustes de contraste e proporção para telas móveis estreitas */
 .method-highlight{border-color:rgba(140,74,56,.3);color:#76594f}.method-highlight strong{color:var(--terracota);font-weight:600}
 @media(max-width:620px){.hero-layout{padding-top:clamp(420px,118vw,490px)}}
+
+/* Composição mobile: hero compacta, título equilibrado e carrossel estável */
+.mastery-title-mobile{display:none}
+@media(max-width:390px){.hero-layout{padding-top:clamp(360px,101vw,395px)}}
+@media(max-width:620px){.mastery .section-heading{max-width:100%}.mastery .kicker{width:100%;justify-content:center;padding-inline:0;white-space:nowrap;letter-spacing:.12em}.mastery .kicker:after{display:none}.mastery-title-desktop{display:none}.mastery-title-mobile{display:block}.mastery .section-heading h2{width:100%;font-size:clamp(2.55rem,11.5vw,3rem);line-height:1.02;text-align:center}.mastery .section-heading>p{max-width:310px;margin-inline:auto;font-size:.96rem;line-height:1.65;text-align:center}.testimonial-track{gap:12px;scroll-snap-stop:always}.testimonial-placeholder{flex:0 0 100%;min-width:100%;margin-right:0}.testimonial-dots{justify-content:center}}
